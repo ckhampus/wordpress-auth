@@ -1,0 +1,57 @@
+{
+    "hash": "315b6e08957cf6d4d4d04b279def93d6",
+    "packages": [
+        {
+            "package": "facebook/php-sdk",
+            "version": "dev-master",
+            "source-reference": "aba1cc47293323675feeeb1d8df193e216f92144"
+        },
+        {
+            "package": "pimple/pimple",
+            "version": "dev-master",
+            "source-reference": "v1.0.0"
+        },
+        {
+            "package": "pimple/pimple",
+            "version": "dev-master",
+            "source-reference": "v1.0.0",
+            "alias-pretty-version": "1.0.x-dev",
+            "alias-version": "1.0.9999999.9999999-dev"
+        },
+        {
+            "package": "symfony/http-foundation",
+            "version": "dev-master",
+            "source-reference": "5b1581418381f46679604fd19efc8b518f2390ae",
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
+        },
+        {
+            "package": "symfony/http-foundation",
+            "version": "dev-master",
+            "source-reference": "5b1581418381f46679604fd19efc8b518f2390ae"
+        },
+        {
+            "package": "symfony/routing",
+            "version": "dev-master",
+            "source-reference": "aec133671d79d530d09aa0b5ca4cea9e4ee4b274"
+        },
+        {
+            "package": "symfony/routing",
+            "version": "dev-master",
+            "source-reference": "aec133671d79d530d09aa0b5ca4cea9e4ee4b274",
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "pimple/pimple": 20,
+        "symfony/routing": 20,
+        "symfony/http-foundation": 20,
+        "facebook/php-sdk": 20
+    }
+}

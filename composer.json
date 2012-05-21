@@ -1,0 +1,11 @@
+{
+    "require": {
+        "pimple/pimple": "dev-master",
+        "symfony/routing": "dev-master",
+        "symfony/http-foundation": "dev-master",
+        "facebook/php-sdk": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Queensbridge": "src/" }
+    }
+}
