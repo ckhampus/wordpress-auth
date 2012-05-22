@@ -14,7 +14,7 @@ use Queensbridge\Authentication\Authenticator;
 use Queensbridge\Authentication\Strategies\FacebookStrategy;
 
 $authenticator = new Authenticator();
-$authenticator->register('facebook', new FacebookStrategy('230248893752703', '8b625fbf0c57d0b49f571283f1d00b3c'));
+$authenticator->register('facebook', new FacebookStrategy('APPID', 'SECRET'));
 
 add_action('init', function () use ($authenticator) {
     $authenticator->handle();
