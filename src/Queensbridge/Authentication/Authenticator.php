@@ -52,9 +52,9 @@ class Authenticator extends \Pimple
 
     /**
      * Register a new authentication strategy.
-     * 
-     * @param  string                                          $name     The strategy name.
-     * @param  Strategy $strategy The authentication strategy.
+     *
+     * @param string   $name     The strategy name.
+     * @param Strategy $strategy The authentication strategy.
      */
     public function register($name, Strategy $strategy)
     {
@@ -73,11 +73,11 @@ class Authenticator extends \Pimple
 
     /**
      * This method handles the authentication callback.
-     * 
+     *
      *
      * @param  Request  $request  The request object.
      * @param  string   $provider The authentication provider.
-     * @return Response           The response.
+     * @return Response The response.
      */
     public function callback(Request $request, $provider)
     {
@@ -100,6 +100,7 @@ class Authenticator extends \Pimple
 
                 if (empty($pids)) {
                     add_user_meta($uid, 'pids', $pid);
+
                     return new Response('account linked to '.$userdata['provider']);
                 } elseif (in_array($pid, $pids)) {
                     return new Response('account already linked to '.$userdata['provider']);
@@ -109,6 +110,7 @@ class Authenticator extends \Pimple
 
                 if ($user != null) {
                     wp_set_auth_cookie($user->data->ID, true);
+
                     return new Response('successfully logged in using '.$userdata['provider']);
                 } else {
                     return new Response('no user found');
@@ -122,7 +124,7 @@ class Authenticator extends \Pimple
     /**
      * Handles incoming authentication requests.
      *
-     * @param  Request $request The request object.
+     * @param Request $request The request object.
      */
     public function handle($request = null)
     {

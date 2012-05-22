@@ -5,7 +5,6 @@ namespace Queensbridge\Authentication\Strategies;
 use Queensbridge\Authentication\Authenticator;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 abstract class Strategy
 {

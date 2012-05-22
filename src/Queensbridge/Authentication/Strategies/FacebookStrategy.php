@@ -3,8 +3,6 @@
 namespace Queensbridge\Authentication\Strategies;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class FacebookStrategy extends Strategy
 {
@@ -32,10 +30,12 @@ class FacebookStrategy extends Strategy
                 'scope' => 'email',
                 'redirect_uri' => $this->getCallbackUrl()
             );
-            
+
+
             return $fb->getLoginUrl($params);
         }
-         
+
+
         return $this->getCallbackUrl();
     }
 
@@ -46,6 +46,7 @@ class FacebookStrategy extends Strategy
 
         try {
             $profile = $fb->api('/me','GET');
+
             return array(
                 'provider' => $this->getName(),
                 'uid' => $profile['id'],

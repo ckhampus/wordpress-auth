@@ -34,7 +34,8 @@ class StrategyCollection implements \IteratorAggregate
         }
     }
 
-    public function getIterator() {
+    public function getIterator()
+    {
         return new \ArrayIterator($this->strategies);
     }
 }
