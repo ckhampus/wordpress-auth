@@ -1,4 +1,7 @@
 {
+    "name": "queensbridge/wordpress-auth",
+    "keywords": ["wordpress"],
+    "version": "0.0.1",
     "require": {
         "pimple/pimple": "dev-master",
         "symfony/routing": "dev-master",
