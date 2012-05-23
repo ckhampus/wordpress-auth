@@ -12,9 +12,16 @@
         "pimple/pimple": "dev-master",
         "symfony/routing": "dev-master",
         "symfony/http-foundation": "dev-master",
-        "facebook/php-sdk": "dev-master"
+        "facebook/php-sdk": "dev-master",
+        "queensbridge/wordpress-helpers": "dev-master"
     },
     "autoload": {
         "psr-0": { "Queensbridge": "src/" }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://repo.cristianhampus.se"
+        }
+    ]
 }
